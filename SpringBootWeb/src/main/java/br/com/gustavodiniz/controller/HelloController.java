@@ -22,7 +22,7 @@ public class HelloController {
 
 		PessoaModel model = pessoaRepository.findByNome("gustavo");
 		p.setNome(model.getNome());
-		p.setIdade(p.getIdade());
+		p.setIdade(model.getIdade());
 		p.setEmail(model.getEmail());
 		
 		return p;

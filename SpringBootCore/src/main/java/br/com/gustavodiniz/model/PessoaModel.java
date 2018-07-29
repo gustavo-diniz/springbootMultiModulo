@@ -17,7 +17,7 @@ public class PessoaModel implements Serializable {
 	@Id
 	private long id;
 	private String nome;
-	private String idade;
+	private Integer idade;
 	private String email;
 
 	public long getId() {
@@ -36,11 +36,11 @@ public class PessoaModel implements Serializable {
 		this.nome = nome;
 	}
 
-	public String getIdade() {
+	public Integer getIdade() {
 		return idade;
 	}
 
-	public void setIdade(String idade) {
+	public void setIdade(Integer idade) {
 		this.idade = idade;
 	}
 
